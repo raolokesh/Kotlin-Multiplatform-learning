@@ -1,5 +1,7 @@
 package com.jetbrains.kmpapp.navigation
 
+import kotlinx.serialization.Serializable
+
 
 sealed class Screen(val route : String){
 

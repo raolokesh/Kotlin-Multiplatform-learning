@@ -41,7 +41,7 @@ kotlin {
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
-//            implementation(compose.material3)
+            implementation(compose.material3)
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
@@ -58,8 +58,8 @@ kotlin {
             implementation(libs.coil.network.ktor)
             implementation(libs.koin.core)
             implementation(libs.koin.compose.viewmodel)
-            implementation("androidx.compose.material3:material3:1.5.0-alpha01")
-            implementation("androidx.compose.material:material-icons-extended:1.6.0")
+//            implementation("androidx.compose.material3:material3:1.5.0-alpha01")
+//            implementation("androidx.compose.material:material-icons-extended:1.6.0")
         }
     }
 }

@@ -30,8 +30,8 @@ fun RootNavGraph(navController: NavHostController) {
             route = Screen.Details.route,
             arguments = listOf(navArgument("id") { type = NavType.IntType })
         ) { backStackEntry ->
-            val id = backStackEntry.arguments?.getInt("id")
-            DetailsScreen(id = id, {
+//            val id = backStackEntry.arguments?.getInt("id")
+            DetailsScreen(id = 100, {
                 navController.popBackStack()
             })
         }

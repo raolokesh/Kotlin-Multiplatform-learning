@@ -8,14 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.input.TextFieldState
-import androidx.compose.foundation.text.input.TextObfuscationMode
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedSecureTextField
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -108,30 +101,30 @@ fun DashboardScreen(
 
 
 
-            OutlinedSecureTextField(
-                state = passwordState,
-                label = { Text("Password") },
-                placeholder = { Text("Password") },
-                modifier = Modifier.fillMaxWidth().padding(10.dp),
-                isError = passwordError != null,
-                supportingText = {
-                    if (passwordError != null) {
-                        Text(passwordError!!)
-                    }
-                },
-                trailingIcon = {
-                    val image = if (passwordVisible)
-                        Icons.Filled.Check
-                    else Icons.Filled.CheckCircle
-                    val description = if (passwordVisible) "Hide password" else "Show password"
+//            OutlinedTextField(
+//                state = passwordState,
+//                label = { Text("Password") },
+//                placeholder = { Text("Password") },
+//                modifier = Modifier.fillMaxWidth().padding(10.dp),
+//                isError = passwordError != null,
+//                supportingText = {
+//                    if (passwordError != null) {
+//                        Text(passwordError!!)
+//                    }
+//                },
+////                trailingIcon = {
+//                    val image = if (passwordVisible)
+//                        Icons.Filled.Check
+//                    else Icons.Filled.CheckCircle
+//                    val description = if (passwordVisible) "Hide password" else "Show password"
+//
+//                    IconButton(onClick = { passwordVisible = !passwordVisible }) {
+//                        Icon(imageVector = image, description)
+//                    }
+//                },
+//                textObfuscationMode = if (passwordVisible) TextObfuscationMode.Visible else TextObfuscationMode.RevealLastTyped,
 
-                    IconButton(onClick = { passwordVisible = !passwordVisible }) {
-                        Icon(imageVector = image, description)
-                    }
-                },
-                textObfuscationMode = if (passwordVisible) TextObfuscationMode.Visible else TextObfuscationMode.RevealLastTyped,
-
-                )
+//                )
 
 
 
